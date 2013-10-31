@@ -1,0 +1,255 @@
+/*FONTS*/
+@font-face {
+    font-family: 'EuphoriaScriptRegular';
+	src: url('Fonts/EuphoriaScript-Regular-webfont.eot');
+	src: url('Fonts/EuphoriaScript-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('Fonts/EuphoriaScript-Regular-webfont.woff') format('woff'),
+	url('Fonts/EuphoriaScript-Regular-webfont.ttf') format('truetype'),
+	url('Fonts/EuphoriaScript-Regular-webfont.svg#EuphoriaScriptRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColaborateThinRegular';
+    src: url('Fonts/ColabThi-webfont.eot');
+    src: url('Fonts/ColabThi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/ColabThi-webfont.woff') format('woff'),
+         url('Fonts/ColabThi-webfont.ttf') format('truetype'),
+         url('Fonts/ColabThi-webfont.svg#ColaborateThinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColaborateBoldRegular';
+    src: url('Fonts/ColabBol-webfont.eot');
+    src: url('Fonts/ColabBol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/ColabBol-webfont.woff') format('woff'),
+         url('Fonts/ColabBol-webfont.ttf') format('truetype'),
+         url('Fonts/ColabBol-webfont.svg#ColaborateBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*MODS TO BASIC HTML TAGS*/
+body{
+	background:rgba(237, 237, 237, 1); /*grey*/
+	font: 15px "ColaborateThinRegular", Georgia, serif;
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	font-family: "ColaborateThinRegular", Georgia, serif;
+    font-size:5em;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h2 {
+	font-family: "ColaborateBoldRegular", Georgia, sans-serif;
+	text-align:center;
+}
+
+p {
+	margin:20px;
+}
+
+section {
+	height:750px;
+}
+
+a{
+	text-decoration: none;
+	color:rgba(28,28,28,1);
+}
+
+
+/*BROAD CLASSES*/
+.container {
+	position:relative;
+	display:block;
+	/*border:1px solid yellow;*/
+}
+
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.container {
+  zoom: 1;
+}
+
+.right { 	float:right;	}
+.left {		float:left;		}
+.half {
+	width:50%;
+	margin:0;
+}
+
+.full {
+	width:100%;
+	margin:0;
+	left:0;
+}
+
+
+.content p {
+	font-size: 1.3em;
+}
+
+.vcenter {
+	position:absolute;
+	top:25%;
+}
+
+.outline {
+	border: 3px solid rgba(237, 237, 237, 1);
+	webkit-border-radius:10px;
+	moz-border-radius:10px;
+	border-radius:10px;
+	background: rgba(38,38,38,1);
+}
+
+
+/*SECTION-SPECIFIC CSS*/
+nav.left {
+	padding: 5px;
+	margin: 5px;
+}
+
+nav.right {
+	margin: 0;
+	padding: 6px 0;
+	height: 65px;
+	min-width: 25%;
+}
+
+nav p {
+	margin: 7.5px 20px;
+}
+
+
+nav li {
+	display:inline-block;
+}
+
+nav a {
+	font-family:"EuphoriaScriptRegular", Georgia, serif;
+  text-shadow:1px 1px 1px rgb(197, 149, 26); /*yellow*/
+  font-size: 2em;
+
+  -webkit-border-radius: 5px;
+ 	-moz-border-radius: 5px;
+ 	border-radius: 5px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	padding:0;
+
+}
+
+nav ul {
+	padding:0;
+	margin: 0;
+}
+nav a:hover{
+	color:rgba(237,237,237, 1);
+	text-shadow:-1px -1px 15px black;
+}
+
+nav img {
+	max-height: 50px;
+	border: 0;
+}
+
+nav img:hover{
+	box-shadow: 1px 1px 5px;
+}
+
+#main {
+	margin-top:65px;
+}
+
+#intro {
+	text-align: center;
+	background-color:rgba(112,2,2, 1);
+	color:rgb(235, 241, 157);
+}
+
+#intro img {
+	height:350px;
+}
+
+#intro h2 {
+	font-family: "ColaborateThinRegular", Arial, sans-serif;
+}
+
+
+#intro table td {
+	padding-left: 30px;
+	vertical-align: middle;
+	text-align: center;
+	height:350px;
+	width: 350px;
+}
+
+
+#section1, #section3 {
+	background-color:rgb(29,29,29); /*grey*/
+    color:rgb(202,172,203); /*violet*/
+}
+
+#section1 h1, #section3 h1 {
+    text-shadow:2px 1px 1px #EDEDED;
+}
+
+#section2 {
+	color:rgb(5,0,66); /*dark blue*/
+    background-color:rgb(202,172,203); /*violet*/
+}
+
+#section2 h1 {
+	text-shadow:2px 1px 1px rgba(141,29,29, 1);
+}
+
+.half article {
+	background:rgba(237, 237, 237, 1);
+	color:rgb(5,0,66);
+	margin:20px auto;
+}
+
+#section2 .half article {
+	background: rgb(29,29,29);
+	color:rgb(237,237,237);
+}
+
+.bar {
+	background:rgba(237, 237, 237, .8);
+	position:fixed;
+	z-index:1;
+}
+
+header {
+	top:0px;
+	left:0px;
+	height:65px;
+}
+
+footer {
+	bottom:0px;
+	left:0px;
+	height:65px;
+	text-align: right;
+}
+
+footer p {
+	margin: 15px 10px 0 0;
+}
