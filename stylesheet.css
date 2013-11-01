@@ -1,4 +1,5 @@
 /*FONTS*/
+
 @font-face {
     font-family: 'EuphoriaScriptRegular';
 	src: url('Fonts/EuphoriaScript-Regular-webfont.eot');
@@ -33,17 +34,24 @@
 }
 
 /*MODS TO BASIC HTML TAGS*/
+
+/*div {
+		border:1px solid yellow;
+}
+*/
 body{
-	background:rgba(237, 237, 237, 1); /*grey*/
 	font: 15px "ColaborateThinRegular", Georgia, serif;
 	margin:0;
 	padding:0;
 }
 
+body, .bar {
+	background:#F2EFE9;
+}
+
 h1 {
-	font-family: "ColaborateThinRegular", Georgia, serif;
-    font-size:5em;
-    text-align: center;
+		font-family: "ColabBol-webfont", Georgia, serif;
+    font-size:3em;
     margin-top: 80px;
 }
 
@@ -57,7 +65,7 @@ p {
 }
 
 section {
-	height:750px;
+	height:500px;
 }
 
 a{
@@ -70,7 +78,6 @@ a{
 .container {
 	position:relative;
 	display:block;
-	/*border:1px solid yellow;*/
 }
 
 .container:before,
@@ -108,6 +115,10 @@ a{
 	top:25%;
 }
 
+.hcenter {
+	margin-left: 25%;
+}
+
 .outline {
 	border: 3px solid rgba(237, 237, 237, 1);
 	webkit-border-radius:10px;
@@ -133,9 +144,9 @@ nav p {
 
 #my_name {
 	font-family:"EuphoriaScriptRegular", Georgia, serif;
-	font-size: 5em;
+	font-size: 4em;
 	position: absolute;
-	bottom:-35px;
+	bottom:-22px;
 	font-variant: normal;
 }
 
@@ -193,65 +204,78 @@ nav img:hover{
 }
 
 #main {
-	margin-top:65px;
+	margin-top:100px;
 	margin-bottom: 15px;
+}
+
+#intro h1 {
+	font-size: 5em;
+	margin:40px;
+  text-shadow:2px 1px 1px rgb(98,78,68);
+	font-family: "ColaborateThinRegular";
 }
 
 #intro {
 	text-align: center;
-	background-color:rgba(112,2,2, 1);
+	background-color:#2D5F56;
 	color:rgb(235, 241, 157);
-}
-
-#intro img {
-	height:350px;
 }
 
 #intro h2 {
 	font-family: "ColaborateThinRegular", Arial, sans-serif;
 }
 
-
-#intro table td {
-	padding-left: 30px;
-	vertical-align: middle;
-	text-align: center;
-	height:350px;
-	width: 350px;
+.box {
+	display:inline-block;
+	height:10em;
+	width:10em;
+	margin:0.5em;
+	background-color:#902F3C;
 }
 
-
-#section1, #section3 {
-	background-color:rgb(29,29,29); /*grey*/
-    color:rgb(202,172,203); /*violet*/
+.box p {
+	margin-top: 4em;
 }
 
-#section1 h1, #section3 h1 {
+#displaycase {
+	padding: 4em;
+}
+
+#section1 {
+	color:#902F3C;
+	background-color:#E9CB97;
+}
+
+#section1 h1 {
     text-shadow:2px 1px 1px #EDEDED;
 }
 
+#section1 a {
+	color:white;
+	text-align: center;
+	vertical-align: center;
+}
+
 #section2 {
-	color:rgb(5,0,66); /*dark blue*/
-    background-color:rgb(202,172,203); /*violet*/
+	background-color: #902F3C;
+	color:#F4E3C5;
+	text-shadow:black 1px 1px 1px;
 }
 
-#section2 h1 {
-	text-shadow:2px 1px 1px rgba(141,29,29, 1);
+#section2 .left.half {
+	padding:0 100px;
+	box-sizing:border-box;
+	text-align: justify;
+
 }
 
-.half article {
-	background:rgba(237, 237, 237, 1);
-	color:rgb(5,0,66);
-	margin:20px auto;
-}
-
-#section2 .half article {
-	background: rgb(29,29,29);
-	color:rgb(237,237,237);
+.right.half {
+	padding-right: 200px;
+	text-align: justify;
+	box-sizing:border-box;
 }
 
 .bar {
-	background:rgba(237, 237, 237, .8);
 	position:fixed;
 	z-index:1;
 }
